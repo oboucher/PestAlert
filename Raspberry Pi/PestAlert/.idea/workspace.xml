@@ -67,6 +67,11 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../../../Github/PestAlert/Raspberry Pi" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.BLE_Inteface">
     <configuration name="BLE_Inteface" type="PythonConfigurationType" factoryName="Python" singleton="false" nameIsGenerated="true">
       <module name="PestAlert" />
@@ -151,7 +156,7 @@
       <updated>1612398849956</updated>
       <workItem from="1612398854975" duration="1244000" />
       <workItem from="1612400118494" duration="5198000" />
-      <workItem from="1612467337943" duration="750000" />
+      <workItem from="1612467337943" duration="1076000" />
     </task>
     <servers />
   </component>
