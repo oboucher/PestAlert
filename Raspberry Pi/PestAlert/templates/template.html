@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Pest Alert</title>
+</head>
+<body>
+<style>
+ 
+ td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+</style>
+<table>
+    <thead>
+    <tr>
+        <th>Picture</th>
+        <th>RH Percentage</th>
+        <th>Temperature in Degrees Celcius</th>
+    </tr>
+    </thead>    
+    <tbody>
+        {% for row in data %}    
+            <tr>
+                <td> <img src={{ url_for('static', filename=row[0]) }} alt="{{row[0]}}"> </td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
