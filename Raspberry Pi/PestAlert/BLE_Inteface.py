@@ -27,7 +27,9 @@ def addToDB(textString):
     # render_template('template.html', value=results)
     print(results)
 
-
+# I honestly dont know what the difference is between run main and run all, they seem identical but there was a reason
+# for there to be 2, leaving it for now incase we figure out why
+# comments should be the same and im lazy, so refer to runAll for how it works
 def runMain(s):
     byteNum = 0
     uart_service.write(s.encode("utf-8"))
@@ -58,7 +60,7 @@ def runMain(s):
     print(textString)
     addToDB(textString)
 
-#Testing function to get text from the device, can be removed once we know everything works
+# Testing function to get text from the device, can be removed once we know everything works
 def getText(s):
     uart_service.write(s.encode("utf-8"))
     text = uart_service.readline().decode("utf-8")
@@ -66,40 +68,55 @@ def getText(s):
     return
 
 def runAll(s):
+    # bytes received, used to tell if we are getting all of the data
     byteNum = 0
+    # send the user input that was passed thru as s, this tells the arduino what we want to do
+    # happens in each run function to ensure command isnt sent before we are ready to get the data
     uart_service.write(s.encode("utf-8"))
+    # wait until the arduino sends an c back, to tell the rpi we are about to get data
     while (True):
         val = uart_service.read(nbytes=1)
         if (val == None):
             continue
         if (val.decode("utf-8") == 'c'):
             break
-
+    # debug statement to know we are getting the name first
     print("readyForImgName")
+    # read the first line available on the uart service, this will contain the file name
     imageName = uart_service.readline().decode("utf-8")
+    # print the name to make sure its the right one
     print(imageName)
 
+    # send an n to the arduino to tell it we are ready to go to the next step, and get the image data
     uart_service.write('n'.encode('utf-8'))
+    # a file with the name of the image that we will save data to
     f = open(imageName, 'wb+')
+    # get the first 4 bytes, then delay, print statemtns are for debugging
     val = uart_service.read(nbytes=4)
     print("delay")
     time.sleep(.01)
     print("dd")
-    lval = val
+    # Get the data from the uart service, then write them to teh file, 4 bytes at a time for now, seems to be reliable
     while (val != None):
         # print(val)
         f.write(val)
         val = uart_service.read(nbytes=4)
         byteNum = byteNum + 4
+        # we need this delay to allow the arduino to send data, if we dont we might read the same data in
         time.sleep(.005)
-    # uart_service.write('n'.encode("utf-8"))
+    # print the number of bytes recived,
     print(byteNum)
+    # close the file
     f.close()
-    # clearFile(imageName)
-
+    # send request the next data again
     uart_service.write('n'.encode("utf-8"))
+    # arduino will send a line with the image name, temperature, and humidity seperated by a comma
     textString = uart_service.readline().decode("utf-8")
+    #print it so we know it works
     print(textString)
+    # add that data to the DB, this is how the webapp knows the image path, as well as the temp and humidity
+    # right now it adds it to an incorrect path, we need to figure out how to get it to go into the static folder
+    #TODO: save image to the static folder instead of the project folder. Need for CDR
     addToDB(textString)
 
 
