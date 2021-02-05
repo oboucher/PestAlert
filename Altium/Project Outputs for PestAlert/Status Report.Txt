@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [PestAlert.PcbDoc]
+   Generated File[PestAlert.TXT]
+   Generated File[PestAlert.LDP]
+   Generated File[PestAlert.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 1:25:37 AM On 2/5/2021
