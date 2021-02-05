@@ -1,0 +1,342 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD21\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2/5/2021</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12:35:22 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///\\Mac\Home\Desktop\PestAlert.PcbDoc" class="file"><acronym title="\\Mac\Home\Desktop\PestAlert.PcbDoc">\\Mac\Home\Desktop\PestAlert.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">6</td></tr>
+</table>
+</td>
+</table><a name="IDTC5HAG2ZOHLRFEYM3C20TZKNIM50X2HXYLX0YPPTDYA1E30QHJXF"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKR3ZE4VN5PALRSHBE5O4TISTNSCJOI1NUSFJOK00430ZB5B0PYI">Clearance Constraint (Gap=5mil) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVJTABGOSAI5LE5Y3RWKQFIQKQKXYBTNMIE22FULUSXZQBUBKZH0N">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDA5WTMEKWMIXLEPGN2AF242EIEPOJRD1JQNVFN2FEV243VZOQ44RI">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHKWV1LRHYDZPDSD3PWCM54ABYI541MPSIE5I5PPPJEDS4LX0M3TL">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVEEMMRBMMW33N250X5R5OOUUMJQ3JAULTSMH24HCJ2ZF31MDRORB">Width Constraint (Min=5mil) (Max=10mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2PDRYD3U0UCILSFISR5HH4AOYO2APHH3NMDSQMMHYO0PZAPFO2EH">SMD Neck-Down Constraint (Percent=100%) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKNXRKB3N3K5XBW1HB4OVBXOH0P0FVUAOCJAONEOUZAY1TBHNYDKB">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHU1SCCGXFW4LD0A3SE42QPVTLEOABCGCAI0LMLFPIRBMQXDO2G1H">Acute Angle Constraint [Tracks Only] (Minimum=45.000) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0UEBXQW1CBFCO1GDKNJ2FWW0OEZH202HPDD02TPM4WLRWKKKVQ0J">Hole Size Constraint (Min=1mil) (Max=100mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUMI4ZLR0GEV2IV24SM41GRRD2OX5Q4QHSMECUXOEFPDE0RUITZQI">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID05DQWDDOTUPJMME4RPGSELJMUCPDFTMIGP5EPBLJS1HVGV01EUND">Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">6</td>
+</tr>
+</table><br><a name="IDKR3ZE4VN5PALRSHBE5O4TISTNSCJOI1NUSFJOK00430ZB5B0PYI"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=5mil) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\PestAlert.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4726.167mil|Location2.X=4732.417mil|Location1.Y=4590.87mil|Location2.Y=4597.12mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\PestAlert.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4726.167mil|Location2.X=4732.417mil|Location1.Y=4590.87mil|Location2.Y=4597.12mil|Absolute=True">Clearance Constraint: (2.875mil &lt; 5mil) Between Region (0 hole(s)) Keep-Out Layer And Track (4729.292mil,4544.252mil)(4729.292mil,4587.558mil) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\PestAlert.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5092.307mil|Location2.X=5098.557mil|Location1.Y=4590.87mil|Location2.Y=4597.12mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\PestAlert.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5092.307mil|Location2.X=5098.557mil|Location1.Y=4590.87mil|Location2.Y=4597.12mil|Absolute=True">Clearance Constraint: (2.875mil &lt; 5mil) Between Region (0 hole(s)) Keep-Out Layer And Track (5093.307mil,4585.433mil)(5095.432mil,4587.558mil) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID2PDRYD3U0UCILSFISR5HH4AOYO2APHH3NMDSQMMHYO0PZAPFO2EH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">SMD Neck-Down Constraint (Percent=100%) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\PestAlert.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-366.91mil|Location2.X=-300.556mil|Location1.Y=7282.146mil|Location2.Y=7301.63mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\PestAlert.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=-366.91mil|Location2.X=-300.556mil|Location1.Y=7282.146mil|Location2.Y=7301.63mil|Absolute=True">SMD Neck-Down Constraint: Between Pad U2-12(3465.118mil,3824.528mil) on Top Layer And Track (3465.118mil,3824.528mil)(3471.85mil,3824.528mil) on Top Layer Relative Track Width: 101.60%</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\PestAlert.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6832.184mil|Location2.X=6898.538mil|Location1.Y=7692.736mil|Location2.Y=7712.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\PestAlert.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6832.184mil|Location2.X=6898.538mil|Location1.Y=7692.736mil|Location2.Y=7712.22mil|Absolute=True">SMD Neck-Down Constraint: Between Pad U2-14(3419.842mil,3850.118mil) on Top Layer And Track (3419.842mil,3850.118mil)(3419.842mil,3979.842mil) on Top Layer Relative Track Width: 101.60%</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\PestAlert.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6753.444mil|Location2.X=6819.798mil|Location1.Y=7692.736mil|Location2.Y=7712.22mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\PestAlert.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6753.444mil|Location2.X=6819.798mil|Location1.Y=7692.736mil|Location2.Y=7712.22mil|Absolute=True">SMD Neck-Down Constraint: Between Pad U2-16(3380.472mil,3850.118mil) on Top Layer And Track (3380.472mil,3850.118mil)(3380.472mil,3856.85mil) on Top Layer Relative Track Width: 101.60%</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\PestAlert.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6753.365mil|Location2.X=6819.719mil|Location1.Y=7465.453mil|Location2.Y=7484.937mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=\\Mac\Home\Desktop\PestAlert.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6753.365mil|Location2.X=6819.719mil|Location1.Y=7465.453mil|Location2.Y=7484.937mil|Absolute=True">SMD Neck-Down Constraint: Between Pad U2-5(3380.472mil,3739.882mil) on Top Layer And Track (3380.393mil,3733.071mil)(3380.472mil,3733.15mil) on Top Layer Relative Track Width: 101.60%</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

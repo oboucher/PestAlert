@@ -1,0 +1,34 @@
+Removed Pin From Net: NetName=GND Pin=J5-7
+Removed Pin From Net: NetName=GND Pin=J5-8
+Removed Pin From Net: NetName=GND Pin=J5-9
+Removed Pin From Net: NetName=GND Pin=J5-10
+Removed Pin From Net: NetName=GND Pin=J5-11
+Removed Pin From Net: NetName=NetJ5_3 Pin=R7-1
+Removed Pin From Net: NetName=USBD+ Pin=R7-2
+Removed Pin From Net: NetName=NetJ5_2 Pin=R8-1
+Removed Pin From Net: NetName=USBD- Pin=R8-2
+Change Component Footprint: Designator=J5 Old Footprint=FCI-10118194-0001LF-5_V New Footprint=ASSM-A-USBSB-4_V
+Change Component Comment : Designator=J5 Old Comment=10118194-0001LF New Comment=A-USBSB
+Change Managed Component Library Link : Designator=J5 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=641B81C1-6E59-4778-B2DF-DEA897EFC6F7 New ItemGUID=A894471F-E619-4E95-85CD-5EDB554E57C2 Old RevisionGUID=6F87D235-84D4-4185-8EEB-751A0E6E9FC5 New RevisionGUID=3CC81681-B323-4F7C-9919-6056E0CA25EC
+Change component parameters: Designator = "J5" ("J5"); Footprint = "FCI-10118194-0001LF-5_V"; UniqueID = "\FZXWMHDS" ("\FZXWMHDS")
+Change component parameters (AddParameter): Name = "Body Orientation"; Value = "RightAngle"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "CAD Drawing"; Value = "3DCADModel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet URL"; Value = "https://datasheet.ciiva.com/11731/0900766b80da421f-11731321.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Version"; Value = "12/2009"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Gender"; Value = "Female"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "ASSMANN WSW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer URL"; Value = "http://www.assmann.us/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "ThroughHole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "ThroughHole"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Ports"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Description"; Value = "4-Pin Through Hole Device, Body 16.5 x 12.04 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Reference"; Value = "USBSB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination Method"; Value = "Solder"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J5-4
+Added Pin To Net: NetName=USBD- Pin=R7-1
+Added Pin To Net: NetName=NetJ5_2 Pin=R7-2
+Added Pin To Net: NetName=USBD+ Pin=R8-1
+Added Pin To Net: NetName=NetJ5_3 Pin=R8-2
+Change Class Name : Old Net Name=TRY1SCH New Net Name=PestAlert
+Added Member To Class: ClassName=PestAlert Member=Component C7 Cap Semi
+Added Room: Name=PestAlert

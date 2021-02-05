@@ -40,6 +40,23 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=..\..\..\..\..\..\Desktop\PestAlert.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=TFWXVYSF
+
+[Document2]
 DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\PestAlert.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -56,153 +73,123 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UAYVEWGG
 
-[Document2]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\PestAlert.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=TFWXVYSF
-
-[Document3]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\CAMtastic1.Cam
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
 [GeneratedDocument1]
 DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\Design Rule Check - PCB1.html
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.EXTREP
+DocumentPath=Project Outputs for PestAlert\Design Rule Check - PestAlert.html
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GBL
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GBO
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GBP
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GBS
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GD1
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GG1
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GD1
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GKO
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GG1
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM1
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM2
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM3
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM2
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM5
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM3
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM6
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM5
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM13
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM6
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM15
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM13
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM16
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM15
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM20
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM16
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM21
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM20
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM23
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM21
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM24
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM23
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GPB
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GM24
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GPT
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GPB
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GTL
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GPT
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GTO
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GTP
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GTS
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.REP
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument29]
+DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.REP
+DItemRevisionGUID=
+
+[GeneratedDocument30]
 DocumentPath=C:\Users\Public\Documents\Altium\Projects\SDP_Try1\Project Outputs for SDP_Try1\PCB1.RUL
 DItemRevisionGUID=
 
