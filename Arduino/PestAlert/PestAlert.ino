@@ -65,12 +65,11 @@ void loop() {
       TXimageName();
       //Then send teh image data
       sendImageFile();
-
       // now get the temperature and humidity
       // TODO: this doent curently work, we will need to get the new senor set up once it arrives, it uses I2C instead of an alalog value and has a differnt library
       //DHT.read11(dht_apin);
-      int humid = 7;//DHT.humidity;
-      int temp = 7;//DHT.temperature;
+      int humid = 17;//DHT.humidity;
+      int temp = 17;//DHT.temperature;
       //Generate line then fill and send it
       char textPrint[32];
       sprintf(textPrint, "%s, %d, %d", imageFile, humid, temp);

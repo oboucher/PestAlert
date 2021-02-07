@@ -17,14 +17,17 @@ uart_connection = None
 imageNum = 0
 byteNum = 0
 nameBytes = 11
+tsBytes = nameBytes + 8
+
 
 #add image, temp, and humidity to database once all are recived
 def addToDB(textString):
     vals = textString.split(", ")
-    cursor.execute("INSERT INTO info VALUES (?, ?, ?)", (vals[0], vals[1], vals[2]))
-    connection.commit()
-    cursor.execute("SELECT * FROM info")
-    results = cursor.fetchall()
+    print(vals)
+    #cursor.execute("INSERT INTO info VALUES (?, ?, ?)", (vals[0], vals[1], vals[2]))
+    #connection.commit()
+    #cursor.execute("SELECT * FROM info")
+    #results = cursor.fetchall()
     # render_template('template.html', value=results)
     print(results)
 
@@ -113,7 +116,8 @@ def runAll(s):
     # send request the next data again
     uart_service.write('n'.encode("utf-8"))
     # arduino will send a line with the image name, temperature, and humidity seperated by a comma
-    textString = uart_service.readline().decode("utf-8")
+    #TODO: textString is sending an unknown number of bytes, should be 19, but for somereason its not
+    textString = uart_service.read(nbytes = tsBytes).decode("utf-8")
     #print it so we know it works
     print(textString)
     # add that data to the DB, this is how the webapp knows the image path, as well as the temp and humidity
