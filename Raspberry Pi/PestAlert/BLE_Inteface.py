@@ -16,6 +16,7 @@ uart_connection = None
 
 imageNum = 0
 byteNum = 0
+nameBytes = 11
 
 #add image, temp, and humidity to database once all are recived
 def addToDB(textString):
@@ -34,7 +35,7 @@ def runMain(s):
     byteNum = 0
     uart_service.write(s.encode("utf-8"))
 
-    imageName = uart_service.readline().decode("utf-8")
+    imageName = uart_service.read(nbytes=nameBytes).decode("utf-8")
     print(imageName)
 
     uart_service.write('n'.encode('utf-8'))
@@ -82,8 +83,9 @@ def runAll(s):
             break
     # debug statement to know we are getting the name first
     print("readyForImgName")
-    # read the first line available on the uart service, this will contain the file name
-    imageName = uart_service.readline().decode("utf-8")
+    # read the image name, used to be readLine, but for some reason that broke
+    #When possible use read(nbytes) instead of readline to fix errors if size of data is known
+    imageName = uart_service.read(nbytes=nameBytes).decode("utf-8")
     # print the name to make sure its the right one
     print(imageName)
 

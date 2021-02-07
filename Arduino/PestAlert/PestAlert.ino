@@ -50,6 +50,8 @@ void loop() {
     if ((char)c == 'p'){
       //transmitImageData();
       strcpy(sendImg, "IMAGE00.JPG");
+      TXimageName();
+      delay(8);
       sendImageFile();
     }
     

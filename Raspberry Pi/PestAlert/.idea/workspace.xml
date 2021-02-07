@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f39fbdc7-fb06-44c5-b70c-6949181a8a55" name="Default Changelist" comment="" />
+    <list default="true" id="f39fbdc7-fb06-44c5-b70c-6949181a8a55" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLE_Inteface.py" beforeDir="false" afterPath="$PROJECT_DIR$/BLE_Inteface.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +55,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="ProjectId" id="1nzhVU8fqb6rc7kGcn0oSrb63ys" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -59,6 +67,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -157,6 +166,7 @@
       <workItem from="1612398854975" duration="1244000" />
       <workItem from="1612400118494" duration="5198000" />
       <workItem from="1612467337943" duration="3191000" />
+      <workItem from="1612579787597" duration="2605000" />
     </task>
     <servers />
   </component>
@@ -180,26 +190,30 @@
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state x="360" y="233" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1792.1095@0.25.1792.1095" timestamp="1612399769205" />
-    <state width="1750" height="243" key="GridCell.Tab.0.bottom" timestamp="1612450902712">
+    <state width="1750" height="243" key="GridCell.Tab.0.bottom" timestamp="1612661997321">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="243" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1612450902712" />
-    <state width="1204" height="300" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1612411229951" />
-    <state width="1750" height="243" key="GridCell.Tab.0.center" timestamp="1612450902711">
+    <state width="1750" height="243" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1612661997321" />
+    <state width="1750" height="243" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1612661156076" />
+    <state width="1750" height="243" key="GridCell.Tab.0.center" timestamp="1612661997321">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="243" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1612450902711" />
-    <state width="1204" height="300" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1612411229949" />
-    <state width="1750" height="243" key="GridCell.Tab.0.left" timestamp="1612450902710">
+    <state width="1750" height="243" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1612661997321" />
+    <state width="1750" height="243" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1612661156075" />
+    <state width="1750" height="243" key="GridCell.Tab.0.left" timestamp="1612661997320">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="243" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1612450902710" />
-    <state width="1204" height="300" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1612411229948" />
-    <state width="1750" height="243" key="GridCell.Tab.0.right" timestamp="1612450902711">
+    <state width="1750" height="243" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1612661997320" />
+    <state width="1750" height="243" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1612661156070" />
+    <state width="1750" height="243" key="GridCell.Tab.0.right" timestamp="1612661997321">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="243" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1612450902711" />
-    <state width="1204" height="300" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1612411229950" />
+    <state width="1750" height="243" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1612661997321" />
+    <state width="1750" height="243" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1612661156075" />
+    <state x="179" y="112" key="MergeDialog" timestamp="1612662079102">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="179" y="112" key="MergeDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1612662079102" />
     <state x="787" y="309" key="ftp.server.browser" timestamp="1612400025742">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
@@ -207,6 +221,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untitled3$BLE_Inteface.coverage" NAME="BLE_Inteface Coverage Results" MODIFIED="1612399771388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PestAlert$BLE_Inteface.coverage" NAME="BLE_Inteface Coverage Results" MODIFIED="1612419137694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PestAlert$BLE_Inteface.coverage" NAME="BLE_Inteface Coverage Results" MODIFIED="1612661997312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
