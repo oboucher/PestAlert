@@ -17,7 +17,7 @@ uart_connection = None
 imageNum = 0
 byteNum = 0
 nameBytes = 11
-tsBytes = nameBytes + 8
+tsBytes = nameBytes + 3
 
 
 #add image, temp, and humidity to database once all are recived
@@ -60,7 +60,7 @@ def runMain(s):
     # clearFile(imageName)
 
     uart_service.write('n'.encode("utf-8"))
-    textString = uart_service.readline().decode("utf-8")
+    textString = uart_service.readline()
     print(textString)
     addToDB(textString)
 
