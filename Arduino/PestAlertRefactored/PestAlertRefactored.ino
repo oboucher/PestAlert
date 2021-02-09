@@ -2,11 +2,11 @@
 #include <dht.h>
 #include <SD.h>
 #include <SPI.h>
+#include <wire.h>
 
 // FOR HARDWARE SERIAL 
 #include <Adafruit_VC0706.h>
 
-//FOR SOFTWARE SERIAL
 
 // BLE Service
 BLEDfu  bledfu; // OTA DFU service
@@ -157,19 +157,6 @@ void saveImage() {
   return;
 }
 
-/*
-void cameraFix(){
-  digitalWrite(camPwr, LOW);
-  delay(5000);
-  digitalWrite(camPwr, HIGH);
-  delay(1000);
-  Serial.print("Toggled Power");
-  initCAM();
-  saveImage();
-  return;
-}
-*/
-
 //this finds the image name, then sends the image
 //finds name by getting the highest number
 //TODO: Make this work with 999 images as well. Needed for CDR
@@ -185,29 +172,6 @@ void transmitImageData(){
       sendImageFile();
     }
 }
-
-//I DONT THINNNNNK this is used anywhere, so commenting it out
-/*
-void readWipeTextFile(){
-  //create File, starting with just the text document
-  File dataFile = SD.open("data.txt", FILE_READ);
-  //Create n and inputs, inputs has sisze BUFFSIZE+1
-  char n, inputs[BUFSIZE];
-  //While there are still bits to print from the file
-  while (dataFile.available()){
-    //
-    n = dataFile.read(inputs, BUFSIZE);
-    inputs[n] = 0;
-    //FOR DEBUGGING HELPS TO PRINT BYTES ON SERIAL TERMINAL
-    //c = inputs[1];
-    //if (c <= 0xF) Serial.print(F("0"));
-    //Serial.print(c, HEX);
-    //Print Charecters on BLE UART
-    bleuart.print(inputs[0]);
-  }
-  dataFile.close();
-}
-*/
 
 //SENDS IMAGE FILE
 //THIS NEEDS A LOT OF WORk

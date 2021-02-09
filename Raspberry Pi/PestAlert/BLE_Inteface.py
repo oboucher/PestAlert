@@ -29,47 +29,49 @@ def addToDB(textString):
     #cursor.execute("SELECT * FROM info")
     #results = cursor.fetchall()
     # render_template('template.html', value=results)
-    print(results)
+    #print(results)
 
 # I honestly dont know what the difference is between run main and run all, they seem identical but there was a reason
 # for there to be 2, leaving it for now incase we figure out why
 # comments should be the same and im lazy, so refer to runAll for how it works
-def runMain(s):
-    byteNum = 0
-    uart_service.write(s.encode("utf-8"))
-
-    imageName = uart_service.read(nbytes=nameBytes).decode("utf-8")
-    print(imageName)
-
-    uart_service.write('n'.encode('utf-8'))
-    f = open(imageName, 'wb+')
-    val = uart_service.read(nbytes=4)
-    print("delay")
-    time.sleep(.01)
-    print("dd")
-    lval = val
-    while (val != None):
-        # print(val)
-        f.write(val)
-        val = uart_service.read(nbytes=4)
-        byteNum = byteNum + 4
-        time.sleep(.005)
-    # uart_service.write('n'.encode("utf-8"))
-    print(byteNum)
-    f.close()
-    # clearFile(imageName)
-
-    uart_service.write('n'.encode("utf-8"))
-    textString = uart_service.readline()
-    print(textString)
-    addToDB(textString)
+#
+# UNCOMMENT IF NEEDED, BUT ALMOST CERTIAN ITS UNIMPORTANT
+# def runMain(s):
+#     byteNum = 0
+#     uart_service.write(s.encode("utf-8"))
+#
+#     imageName = uart_service.read(nbytes=nameBytes).decode("utf-8")
+#     print(imageName)
+#
+#     uart_service.write('n'.encode('utf-8'))
+#     f = open(imageName, 'wb+')
+#     val = uart_service.read(nbytes=4)
+#     print("delay")
+#     time.sleep(.01)
+#     print("dd")
+#     lval = val
+#     while (val != None):
+#         # print(val)
+#         f.write(val)
+#         val = uart_service.read(nbytes=4)
+#         byteNum = byteNum + 4
+#         time.sleep(.005)
+#     # uart_service.write('n'.encode("utf-8"))
+#     print(byteNum)
+#     f.close()
+#     # clearFile(imageName)
+#
+#     uart_service.write('n'.encode("utf-8"))
+#     textString = uart_service.readline()
+#     print(textString)
+#     addToDB(textString)
 
 # Testing function to get text from the device, can be removed once we know everything works
 def getText(s):
     uart_service.write(s.encode("utf-8"))
-    text = uart_service.readline().decode("utf-8")
-    print(text)
-    return
+    textString = uart_service.readline().decode("utf-8")
+    print(textString)
+    addToDB(textString)
 
 def runAll(s):
     # bytes received, used to tell if we are getting all of the data
@@ -154,8 +156,8 @@ while True:
             s = input("p, r, q: ")
             if (s == 'r'):
                 runAll(s)
-            if (s == 'p'):
-                runMain(s)
+            #if (s == 'p'):
+            #    runMain(s)
             if (s == 'q'):
                 sys.exit()
             if (s == 'w'):
