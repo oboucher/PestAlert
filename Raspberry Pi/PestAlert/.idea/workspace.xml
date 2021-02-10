@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f39fbdc7-fb06-44c5-b70c-6949181a8a55" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/~$BOM.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Arduino/PestAlert/PestAlert.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../../Arduino/PestAlert/PestAlert.ino" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BLE_Inteface.py" beforeDir="false" afterPath="$PROJECT_DIR$/BLE_Inteface.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +166,7 @@
       <workItem from="1612400118494" duration="5198000" />
       <workItem from="1612467337943" duration="3191000" />
       <workItem from="1612579787597" duration="10778000" />
-      <workItem from="1612849176674" duration="218000" />
+      <workItem from="1612849176674" duration="644000" />
     </task>
     <servers />
   </component>

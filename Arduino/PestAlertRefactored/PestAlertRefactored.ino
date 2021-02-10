@@ -2,7 +2,6 @@
 #include <dht.h>
 #include <SD.h>
 #include <SPI.h>
-#include <wire.h>
 
 // FOR HARDWARE SERIAL 
 #include <Adafruit_VC0706.h>
