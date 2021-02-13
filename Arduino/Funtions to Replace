@@ -1,0 +1,3 @@
+Serial.println
+Serial.begin
+---> Basically just serial, not fully sure if this is one i need to do tho
