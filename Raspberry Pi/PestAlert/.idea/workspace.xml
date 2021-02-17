@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f39fbdc7-fb06-44c5-b70c-6949181a8a55" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/BOM.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/BOM.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Job1.PDF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Arduino/PestAlertRefactored/PestAlertRefactored.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../../Arduino/PestAlertRefactored/PestAlertRefactored.ino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Arduino/PestAlertRefactored/setup.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../../Arduino/PestAlertRefactored/setup.ino" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BLE_Inteface.py" beforeDir="false" afterPath="$PROJECT_DIR$/BLE_Inteface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/webApp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +57,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="JupyterTrust" id="e1b261ab-a51b-42db-a1d8-1e8e50550aaa" />
   <component name="ProjectId" id="1nzhVU8fqb6rc7kGcn0oSrb63ys" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -173,7 +169,7 @@
       <workItem from="1612467337943" duration="3191000" />
       <workItem from="1612579787597" duration="10778000" />
       <workItem from="1612849176674" duration="1348000" />
-      <workItem from="1613430025362" duration="10874000" />
+      <workItem from="1613430025362" duration="11380000" />
     </task>
     <servers />
   </component>

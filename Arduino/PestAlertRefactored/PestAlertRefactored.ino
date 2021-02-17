@@ -137,7 +137,8 @@ void saveImage() {
 
 //SENDS IMAGE FILE
 //THIS NEEDS A LOT OF WORk
-//TODO: right now this no longer works, and i cant figure out why, need to test it and get it working ASAP
+//TODO: works, needs to be much faster, ideally send 16bytes at a time, but over 4 bytes at a time causes data loss 
+//      related to speed, i.e. 
 void sendImageFile(){
   // debug print statemnts
   Serial.println();
