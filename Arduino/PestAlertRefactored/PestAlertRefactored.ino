@@ -37,17 +37,9 @@ void loop() {
   while ( bleuart.available() ) {
     // Get the input from the rPi, then print it out so we know its right
     int c = bleuart.read();
-    Serial.print((char)c);
-
-    //This just takes a picture
-    if ((char)c == 'x') {
-      // turn LED on:
-      Serial.println("High");
-      saveImage();
-    }
+    
     //This sends image00.jpg, useful to make sure we are getting an image, does not rely on sd card
     if ((char)c == 'p'){
-      //transmitImageData();
       strcpy(sendImg, "IMAGE00.JPG");
       TXimageName();
       delay(8);
@@ -62,32 +54,15 @@ void loop() {
       bleuart.write('c');
       // First send the image name
       TXimageName();
-      //Then send teh image data
+      //send image name, temp, and humidity
+      //TXdata();
+      //send image data
       sendImageFile();
-      // now get the temperature and humidity
-      // TODO: this doent curently work, we will need to get the new senor set up once it arrives, it uses I2C instead of an alalog value and has a differnt library
-      //DHT.read11(dht_apin);
-      int humid = 17;//DHT.humidity;
-      int temp = 17;//DHT.temperature;
-      //Generate line then fill and send it
-      char textPrint[32];
-      sprintf(textPrint, "%s, %d, %d", imageFile, humid, temp);
-      bleuart.write(textPrint);
-      //Print a blank line, followed by the text string
-      Serial.println();
-      Serial.println(textPrint);
-      
     }
     
     // Test function to make sure data is being sent
     if ((char)c == 'w'){
-      strcpy(imageFile, "IMAGE00.JPG");
-      char textPrint[32];
-      int humid = 52;
-      int temp = 64;
-      sprintf(textPrint, "%s, %d, %d", imageFile, humid, temp);
-      Serial.println(textPrint);
-      bleuart.write(textPrint);
+      TXdata();
     }
   }
 
@@ -99,6 +74,15 @@ void loop() {
 void TXimageName(){
   Serial.println(sendImg);
   bleuart.print(sendImg);
+}
+
+void TXdata(){
+      char textPrint[32];
+      int humid = 52;
+      int temp = 64;
+      sprintf(textPrint, "%s, %d, %d", imageFile, humid, temp);
+      Serial.println(textPrint);
+      bleuart.write(textPrint);
 }
 
 //Function that saves the image, right now we dont need a function to fix teh camera when it locks up, but we might later after more testing
@@ -119,8 +103,8 @@ void saveImage() {
     for (int i = 0; i < 100; i++) {
       imageFile[5] = '0' + i / 10;
       imageFile[6] = '0' + i % 10;
-      Serial.print(imageFile[5]);
-      Serial.println(imageFile[6]);
+      //Serial.print(imageFile[5]);
+      //Serial.println(imageFile[6]);
       // create if does not exist, do not open existing, write, sync after write
       if (!SD.exists(imageFile)) {
       break;
@@ -132,9 +116,6 @@ void saveImage() {
   File imgFile = SD.open(imageFile, FILE_WRITE);
 
   uint16_t jpglen = cam.frameLength();
-  //USEFUL FOR DEBUGGING
-  //  Serial.print(jpglen, DEC);
-  //  Serial.println(" byte image");
 
   Serial.print("Writing image to ");
   Serial.print(imageFile);
@@ -142,34 +123,16 @@ void saveImage() {
   while (jpglen > 0) {
     // read 32 bytes at a time;
     uint8_t * buffer;
-    uint8_t bytesToRead = min((uint16_t) 32, jpglen); // change 32 to 64 for a speedup but may not work with all setups!
+    uint8_t bytesToRead = min((uint16_t) 64, jpglen); // change 32 to 64 for a speedup but may not work with all setups!
     buffer = cam.readPicture(bytesToRead);
     imgFile.write(buffer, bytesToRead);
     jpglen -= bytesToRead;
   }
   imgFile.close();
-
-  Serial.println("...Done!");
   cam.resumeVideo();
   cam.setMotionDetect(true);
   memcpy(sendImg, imageFile, sizeof(sendImg));
   return;
-}
-
-//this finds the image name, then sends the image
-//finds name by getting the highest number
-//TODO: Make this work with 999 images as well. Needed for CDR
-void transmitImageData(){
-    strcpy(sendImg, "IMAGE00.JPG");
-    for (int i = 0; i < 100; i++) {
-      sendImg[5] = '0' + i/10;
-      sendImg[6] = '0' + i%10;
-      // create if does not exist, do not open existing, write, sync after write
-      if (! SD.exists(sendImg)) {
-        break;
-      }
-      sendImageFile();
-    }
 }
 
 //SENDS IMAGE FILE
@@ -198,13 +161,13 @@ void sendImageFile(){
     delay(10); //Need to have an at least 7.5ms interval between transmission for BLE
     //write BUFSIZE bytes from inputs array on BLE uart service, 
     bleuart.write(inputs, BUFSIZE);
-     //FOR DEBUGGING HELPS TO PRINT BYTES ON SERIAL TERMINAL
+    //FOR DEBUGGING HELPS TO PRINT BYTES ON SERIAL TERMINAL
     
-    for (int i = 0; i< BUFSIZE; i++){
-      c = inputs[i];
-      if (c <= 0xF) Serial.print(F("0"));
-      Serial.print(c, HEX);
-    }
+    //for (int i = 0; i< BUFSIZE; i++){
+    //  c = inputs[i];
+    //  if (c <= 0xF) Serial.print(F("0"));
+    //  Serial.print(c, HEX);
+    //}
   }
   imgFile.close();
 }

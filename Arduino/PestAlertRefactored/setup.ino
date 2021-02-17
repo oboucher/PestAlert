@@ -9,39 +9,25 @@ void setup() {
   initBLE();
 
   delay(500);
-  Serial.println(F("------------------------------------------------"));
 }
 
 //Confirms that there is an SD card and it can be communicated with
 void initSD() {
   if (!SD.begin(chipSelect)) {
-    Serial.println("Card failed, or not present");
     return;
   }
 }
 
 void initCAM() {
-  
-  Serial.println("VC0706 Camera test");
-
-  //Attempt to find Camera    
-  if (cam.begin()) {
-    Serial.println("Camera Found:");
-  } else {
-    Serial.println("No camera found?");
-    return;
-  }
-  
+  cam.begin();
   //Sets image size to be 640x480, the max the camera supports
   cam.setImageSize(VC0706_640x480);
-
   // enable Camera Motion Detection, doesnt actually do anything, but becomes unresponsive if this is not here
   cam.setMotionDetect(true);
 }
 
 
 void error(const __FlashStringHelper*err) {
-  Serial.println(err);
   while (1);
 }
 
@@ -51,7 +37,6 @@ void initBLE() {
   Bluefruit.autoConnLed(true);
 
   // Config the peripheral connection with maximum bandwidth 
-  // more SRAM required by SoftDevice
   // Note: All config***() function must be called before begin()
   Bluefruit.configPrphBandwidth(BANDWIDTH_MAX);
 
@@ -59,6 +44,7 @@ void initBLE() {
   
   //Tx rate +4dbm
   Bluefruit.setTxPower(4);
+  
   Bluefruit.setName("Pest Alert");
   //Bluefruit.setName(getMcuUniqueID()); // useful testing with multiple central connections
   Bluefruit.Periph.setConnectCallback(connect_callback);
@@ -81,8 +67,6 @@ void initBLE() {
 
   // Set up and start advertising
   startAdv();
-
-  Serial.println("BLE On, Connect to Device");
 }
 
 void startAdv(void)
@@ -113,8 +97,6 @@ void connect_callback(uint16_t conn_handle)
   char central_name[32] = { 0 };
   connection->getPeerName(central_name, sizeof(central_name));
 
-  Serial.print("Connected to ");
-  Serial.println(central_name);
 }
 
 /**
@@ -126,7 +108,4 @@ void disconnect_callback(uint16_t conn_handle, uint8_t reason)
 {
   (void) conn_handle;
   (void) reason;
-
-  Serial.println();
-  Serial.print("Disconnected, reason = 0x"); Serial.println(reason, HEX);
 }

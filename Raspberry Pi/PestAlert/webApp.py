@@ -2,7 +2,7 @@
 # TBH, this doesnt really need comments, it just gets data from the database and displays it in the template
 from flask import Flask, request,render_template
 import sqlite3
-
+# TODO add the ability to request images on the web app need a button that runs the BLE_interface.runAll() method
 app = Flask(__name__)
 
 @app.route('/')
