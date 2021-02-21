@@ -85,26 +85,22 @@ void TXdata(){
       bleuart.write(textPrint);
 }
 
-//Function that saves the image, right now we dont need a function to fix teh camera when it locks up, but we might later after more testing
-// This was basically taken from the example code and works well
-// TODO: make this work with up to 999 images instead of 99. Needed for CDR
+//Function that saves the image
+//This process was basically taken from the example code and works well
+
 void saveImage() {
-  Serial.println("in saveImage");
   
   if (!cam.takePicture()){
-    Serial.println("Failed to snap!");
-    //cameraFix();
   }
   else{
     Serial.println("Picture taken!");
     
-    strcpy(imageFile, "IMAGE00.JPG");
+    strcpy(imageFile, "IMAGE000.JPG");
     
-    for (int i = 0; i < 100; i++) {
-      imageFile[5] = '0' + i / 10;
-      imageFile[6] = '0' + i % 10;
-      //Serial.print(imageFile[5]);
-      //Serial.println(imageFile[6]);
+    for (int i = 0; i < 1000; i++) {
+      imageFile[5] = '0' + i / 100;
+      imageFile[6] = '0' + i % 100;
+      imageFile[7] = '0' + i % 10;
       // create if does not exist, do not open existing, write, sync after write
       if (!SD.exists(imageFile)) {
       break;
@@ -121,9 +117,9 @@ void saveImage() {
   Serial.print(imageFile);
 
   while (jpglen > 0) {
-    // read 32 bytes at a time;
+    // read 64 bytes of the camera's frame buffer at a time
     uint8_t * buffer;
-    uint8_t bytesToRead = min((uint16_t) 64, jpglen); // change 32 to 64 for a speedup but may not work with all setups!
+    uint8_t bytesToRead = min((uint16_t) 64, jpglen);
     buffer = cam.readPicture(bytesToRead);
     imgFile.write(buffer, bytesToRead);
     jpglen -= bytesToRead;
@@ -138,7 +134,7 @@ void saveImage() {
 //SENDS IMAGE FILE
 //THIS NEEDS A LOT OF WORk
 //TODO: works, needs to be much faster, ideally send 16bytes at a time, but over 4 bytes at a time causes data loss 
-//      related to speed, i.e. 
+//      related to speed, i.e. 8bytes looses half the data
 void sendImageFile(){
   // debug print statemnts
   Serial.println();

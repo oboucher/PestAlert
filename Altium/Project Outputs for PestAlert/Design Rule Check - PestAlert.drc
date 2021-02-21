@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : \\Mac\Home\Desktop\PestAlert.PcbDoc
-Date     : 2/5/2021
-Time     : 12:35:22 AM
+Date     : 2/19/2021
+Time     : 6:04:52 PM
 
 Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
    Violation between Clearance Constraint: (2.875mil < 5mil) Between Region (0 hole(s)) Keep-Out Layer And Track (4729.292mil,4544.252mil)(4729.292mil,4587.558mil) on Top Layer 
@@ -17,7 +17,7 @@ Rule Violations :0
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
 
-Processing Rule : Width Constraint (Min=5mil) (Max=10mil) (Preferred=10mil) (All)
+Processing Rule : Width Constraint (Min=5mil) (Max=15mil) (Preferred=10mil) (All)
 Rule Violations :0
 
 Processing Rule : SMD Neck-Down Constraint (Percent=100%) (All)
@@ -31,7 +31,9 @@ Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Co
 Rule Violations :0
 
 Processing Rule : Acute Angle Constraint [Tracks Only] (Minimum=45.000) (All)
-Rule Violations :0
+   Violation between Acute Angle Constraint: (45.000 < 45.000) Between Track (5045mil,4010.511mil)(5103.7mil,3951.811mil) on Top Layer And Track (5103.7mil,3951.811mil)(5103.7mil,4106.3mil) on Top Layer (Angle = 45.000)
+   Violation between Acute Angle Constraint: (45.000 < 45.000) Between Track (4583.465mil,3568.465mil)(4681.732mil,3666.732mil) on Top Layer And Track (4590.355mil,3666.732mil)(4681.732mil,3666.732mil) on Top Layer (Angle = 45.000)
+Rule Violations :2
 
 Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
 Rule Violations :0
@@ -43,6 +45,6 @@ Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (
 Rule Violations :0
 
 
-Violations Detected : 6
+Violations Detected : 8
 Waived Violations : 0
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:01
