@@ -24,12 +24,12 @@ tsBytes = nameBytes + 3
 def addToDB(textString):
     vals = textString.split(", ")
     print(vals)
-    #cursor.execute("INSERT INTO info VALUES (?, ?, ?)", (vals[0], vals[1], vals[2]))
-    #connection.commit()
-    #cursor.execute("SELECT * FROM info")
-    #results = cursor.fetchall()
+    cursor.execute("INSERT INTO info VALUES (?, ?, ?)", (vals[0], vals[1], vals[2]))
+    connection.commit()
+    cursor.execute("SELECT * FROM info")
+    results = cursor.fetchall()
     # render_template('template.html', value=results)
-    #print(results)
+    print(results)
 
 
 # Testing function to get text from the device, can be removed once we know everything works
@@ -89,6 +89,7 @@ def runAll(s):
 
     #print it so we know it works
     #print(textString)
+    os.system("mv " + imageName + " /static")
     # add that data to the DB, this is how the webapp knows the image path, as well as the temp and humidity
     # right now it adds it to an incorrect path, we need to figure out how to get it to go into the static folder
     #TODO: save image to the static folder instead of the project folder. Need for CDR
