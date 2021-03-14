@@ -1,0 +1,41 @@
+Removed Pin From Net: NetName=GND Pin=J5-4
+Change Component Footprint: Designator=J5 Old Footprint=ASSM-A-USBSB-4_V New Footprint=MOLX-105133-0001_V
+Change Component Comment : Designator=J5 Old Comment=A-USBSB New Comment=105133-0001
+Change Managed Component Library Link : Designator=J5 Old VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 New VaultGUID=B7D15EC3-160A-466F-A46C-7801FE6295A7 Old ItemGUID=A894471F-E619-4E95-85CD-5EDB554E57C2 New ItemGUID=DC9B2204-1BC2-4E05-BFBB-ACED2B48EB8A Old RevisionGUID=3CC81681-B323-4F7C-9919-6056E0CA25EC New RevisionGUID=F2F5360F-ED7C-470B-94D6-8002599C80C1
+Change component parameters: Designator = "J5" ("J5"); Footprint = "ASSM-A-USBSB-4_V"; UniqueID = "\EHMEOLDR" ("\EHMEOLDR")
+Change component parameters (AddParameter): Name = "Brand"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Connector Type"; Value = "MicroUSBTypeBReceptacle"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Material"; Value = "CopperAlloy"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "1.8A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet URL"; Value = "http://www.molex.com/webdocs/datasheets/pdf/en-us/1051330001_IO_CONNECTORS.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Version"; Value = "03/2016"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Factory Pack Quantity"; Value = "6000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Flammability Rating"; Value = "UL94V-0"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Gender"; Value = "Receptacle"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer URL"; Value = "http://www.molex.com/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Angle"; Value = "Vertical"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Style"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Technology"; Value = "SurfaceMount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Ports"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Description"; Value = "5-Pin Surface Mount Device, Pitch 0.65 mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Reference"; Value = "105133-0001"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package URL"; Value = "http://www.molex.com/pdm_docs/sd/1051330001_sd.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Version"; Value = "Rev. C, 11/2015"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PartNumber"; Value = "105133-0001"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Product"; Value = "MicroUSBTypeBConnectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Product Category"; Value = "USBConnectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Details"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "105133"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Standard"; Value = "USB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination Style"; Value = "SolderTail"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage - Max"; Value = "30V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "30VAC"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J5-7
+Added Pin To Net: NetName=GND Pin=J5-8
+Added Member To Class: ClassName=PestAlert Member=Component R3 10k
+Added Member To Class: ClassName=PestAlert Member=Component U4 HPP845E031R4
+Added Room: Name=PestAlert

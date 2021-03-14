@@ -3,6 +3,7 @@ void setup() {
   
   Serial.begin(115200);
   Serial1.begin(38400);
+  Wire.begin();
   
   initSD();
   initCAM();
