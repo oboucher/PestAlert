@@ -2,13 +2,13 @@
 from adafruit_ble import BLERadio
 from adafruit_ble.advertising.standard import ProvideServicesAdvertisement
 from adafruit_ble.services.nordic import UARTService
-import re, time, os, sqlite3, sys
-
+import time, os, sqlite3, sys
+from pathlib import Path
 class PestCamera:
 
     def __init__(self):
         self.connection = sqlite3.connect('pest_alert.db')
-        self.cursor = connection.cursor()
+        self.cursor = self.connection.cursor()
 
         # Define radio for finding deivice
         self.ble = BLERadio()
@@ -81,11 +81,13 @@ class PestCamera:
         # arduino will send a line with the image name, temperature, and humidity seperated by a comma
         # TODO: textString is sending an unknown number of bytes, should be 19, but for somereason its not
         imageName = self.uart_service.read(nbytes=12).decode("utf-8")
+        fileName = Path("static/"+imageName)
+        fileName.touch(exist_ok=True)
         # print the name to make sure its the right one
         print(imageName)
         # textString = uart_service.readline().decode("utf-8")
         # a file with the name of the image that we will save data to
-        f = open(imageName, 'wb+')
+        f = open(fileName, 'wb+')
         # get the first 4 bytes, then delay, print statemtns are for debugging
         val = self.uart_service.read(nbytes=BUFFSIZE)
         print("delay")
@@ -107,11 +109,10 @@ class PestCamera:
 
         # print it so we know it works
         # print(textString)
-        os.system("mv " + imageName + " /static")
         # add that data to the DB, this is how the webapp knows the image path, as well as the temp and humidity
         # right now it adds it to an incorrect path, we need to figure out how to get it to go into the static folder
         # TODO: save image to the static folder instead of the project folder. Need for CDR
-        # addToDB(textString)
+
 
 if __name__ == "__main__":
 

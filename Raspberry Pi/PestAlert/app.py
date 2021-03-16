@@ -1,21 +1,24 @@
 # imports
 from flask import Flask, request,render_template
 from PestCamera import PestCamera
-# TODO add the ability to request images on the web app need a button that runs the BLE_interface.runAll() method
+# TODO: Use AJAX to request an update on the device with the [PestCamera].runAll() command without refreshing the page, once the database is updated refresh the page
 app = Flask(__name__)
 
 
 # steps for running program:
 #		Initialize ble and connection
-#		run the runall command
+#		run the pestAlert.runall() command
 #		delay for brief period (THIS IS IMPORTANT FOR SOME REASON SOMETIMES)
-#		run the getText command
+#		run the pestAlert.getText() command
 
-
+@app.before_first_request
+def before_first_request():
+	global pestAlert
+	pestAlert = PestCamera()
+	app.logger.info("before_first_request")
 
 @app.route('/')
 def home():
-	pestAlert = PestCamera()
 	pestAlert.cursor.execute("SELECT * FROM info")
 	data = pestAlert.cursor.fetchall()
 	return render_template('template.html', data=data)

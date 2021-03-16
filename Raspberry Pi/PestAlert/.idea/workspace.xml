@@ -5,73 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f39fbdc7-fb06-44c5-b70c-6949181a8a55" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PestCamera.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(11).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(12).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(13).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(14).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(15).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(16).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(17).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(18).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(19).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(20).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(21).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(3).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(4).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(5).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(6).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(7).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(8).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000D19A743A/PestAlert.~(9).PcbDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000EC452A0E/PestAlert.~(2).SchDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/00000000EC452A0E/PestAlert.~(4).SchDoc.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/PestAlert.~(2).PrjPcb.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/PestAlert.~(3).PrjPcb.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/History/PestAlert.~(4).PrjPcb.Zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Job1.OutJob" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Job1.OutJob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/PestAlert.PrjPcb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/PestAlert.PrjPcb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Archive 2.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Archive 2.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Archive 3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Archive 4.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Archive.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Archive.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Design Rule Check - PestAlert.drc" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Design Rule Check - PestAlert.drc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Design Rule Check - PestAlert.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Design Rule Check - PestAlert.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert-macro.APR_LIB" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert-macro.APR_LIB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.EXTREP" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.EXTREP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GBL" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GBL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GBO" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GBO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GBS" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GBS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GKO" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GKO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM1" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM13" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM13" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM15" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM15" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM2" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM3" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM5" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM6" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GM6" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GTL" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GTL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GTO" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GTO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GTS" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.GTS" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.REP" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.REP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.RUL" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.RUL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.apr" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Gerber/PestAlert.apr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/NC Drill/PestAlert.DRR" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/NC Drill/PestAlert.DRR" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/NC Drill/PestAlert.LDP" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/NC Drill/PestAlert.LDP" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/NC Drill/PestAlert.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/PCBDocuments.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/PCB_SUBMIT.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/SUBMIT_PCB.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Status Report.Txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Status Report.Txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Altium/Project Outputs for PestAlert/Upload.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Arduino/PestAlertRefactored/PestAlertRefactored.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../../Arduino/PestAlertRefactored/PestAlertRefactored.ino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Arduino/PestAlertRefactored/setup.ino" beforeDir="false" afterPath="$PROJECT_DIR$/../../Arduino/PestAlertRefactored/setup.ino" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../OwenBoucherProgress.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../OwenBoucherProgress.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webApp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PestCamera.py" beforeDir="false" afterPath="$PROJECT_DIR$/PestCamera.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +87,7 @@
       <recent name="$PROJECT_DIR$/../../../Github/PestAlert/Raspberry Pi" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app">
+  <component name="RunManager" selected="Python.PestCamera">
     <configuration name="BLE_Inteface" type="PythonConfigurationType" factoryName="Python" singleton="false" nameIsGenerated="true">
       <module name="PestAlert" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -265,7 +201,7 @@
       <workItem from="1613943130260" duration="20550000" />
       <workItem from="1614206600430" duration="113000" />
       <workItem from="1614217172907" duration="10330000" />
-      <workItem from="1615756648224" duration="1415000" />
+      <workItem from="1615756648224" duration="8740000" />
     </task>
     <servers />
   </component>
@@ -294,26 +230,26 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="643" y="421" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1792.1120@0.0.1792.1120" timestamp="1613955486737" />
-    <state width="1750" height="229" key="GridCell.Tab.0.bottom" timestamp="1615758224907">
+    <state width="1750" height="229" key="GridCell.Tab.0.bottom" timestamp="1615786922182">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="1750" height="243" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1614112289729" />
-    <state width="1750" height="229" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1615758224907" />
-    <state width="1750" height="229" key="GridCell.Tab.0.center" timestamp="1615758224906">
+    <state width="1750" height="229" key="GridCell.Tab.0.bottom/0.25.1792.1095@0.25.1792.1095" timestamp="1615786922182" />
+    <state width="1750" height="229" key="GridCell.Tab.0.center" timestamp="1615786922181">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="1750" height="243" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1614112289729" />
-    <state width="1750" height="229" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1615758224906" />
-    <state width="1750" height="229" key="GridCell.Tab.0.left" timestamp="1615758224906">
+    <state width="1750" height="229" key="GridCell.Tab.0.center/0.25.1792.1095@0.25.1792.1095" timestamp="1615786922181" />
+    <state width="1750" height="229" key="GridCell.Tab.0.left" timestamp="1615786922180">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="1750" height="243" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1614112289728" />
-    <state width="1750" height="229" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1615758224906" />
-    <state width="1750" height="229" key="GridCell.Tab.0.right" timestamp="1615758224907">
+    <state width="1750" height="229" key="GridCell.Tab.0.left/0.25.1792.1095@0.25.1792.1095" timestamp="1615786922180" />
+    <state width="1750" height="229" key="GridCell.Tab.0.right" timestamp="1615786922182">
       <screen x="0" y="25" width="1792" height="1095" />
     </state>
     <state width="1750" height="243" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1614112289729" />
-    <state width="1750" height="229" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1615758224907" />
+    <state width="1750" height="229" key="GridCell.Tab.0.right/0.25.1792.1095@0.25.1792.1095" timestamp="1615786922182" />
     <state x="179" y="112" key="MergeDialog" timestamp="1612662079102">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -333,9 +269,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untitled3$BLE_Inteface.coverage" NAME="BLE_Inteface Coverage Results" MODIFIED="1612399771388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PestAlert$PestCamera.coverage" NAME="PestCamera Coverage Results" MODIFIED="1615757424774" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PestAlert$PestCamera.coverage" NAME="PestCamera Coverage Results" MODIFIED="1615786922137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PestAlert$webApp.coverage" NAME="webApp Coverage Results" MODIFIED="1614296570561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/PestAlert$BLE_Inteface.coverage" NAME="BLE_Inteface Coverage Results" MODIFIED="1614296559641" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/PestAlert$app.coverage" NAME="app Coverage Results" MODIFIED="1615758224898" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PestAlert$app.coverage" NAME="app Coverage Results" MODIFIED="1615777518865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
